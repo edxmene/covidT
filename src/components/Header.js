@@ -1,21 +1,12 @@
 import React from "react";
-import {
-  Navbar,
-  Container,
-  Offcanvas,
-  NavDropdown,
-  Nav,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
 
 const Header = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <strong>{"trackerc".toUpperCase()}</strong>{" "}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -25,16 +16,16 @@ const Header = () => {
                 <NavDropdown.Item href="/registerperson">
                   Register a person
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item href="/registercity">
                   Register a city
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Report" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item href="/reportcity">
                   City report
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Person report
+                <NavDropdown.Item href="/reportpeople">
+                  People report
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
