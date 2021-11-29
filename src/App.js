@@ -1,14 +1,16 @@
 import Header from "./components/Header";
 import { Container } from "react-bootstrap";
+import RegisterPerson from "./components/RegisterPerson";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
       <Container>
-        <h5>Welcome: Edxon</h5>
+        <Route path="/registerperson" exact component={RegisterPerson} />
       </Container>
-    </div>
+    </Router>
   );
 }
 
